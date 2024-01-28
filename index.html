@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--   Coding by Damirbek Xursanaliyev   -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,30 @@
     <title>Random Password Generator - Damirbek Xursanaliyev</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="elements">
         <div class="container">
-            <h1>Generate a <br><span>Random Password</span></h1>
-            <h3>by <a href="https://t.me/damirbekx">Damirbek Xursanaliyev</a></h3>
-            <div class="display">
-                <input type="text" id="password" placeholder="Password">
-                <img src="images/copy.png" onclick="copyPassword()">
+            <div class="content_wrapper">
+                <h1 class="title">Generate a <br><span>Random Password</span></h1>
+                <h3 class="creator">by <a href="https://t.me/damirbekx">Damirbek Xursanaliyev</a></h3>
+                <div class="display">
+                    <input type="text" id="password" placeholder="Password">
+                    <img src="images/copy.png" onclick="copyPassword()">
+                </div>
+                <button class="btn" onclick="createPasword()">Generate Password</button>
             </div>
-            <button onclick="createPasword()">Generate Password</button>
         </div>
-    
+
         <div class="footer">
-            <p>&copy; Copyright 2023 - Damirbek Xursanaliyev</p>
+            <div class="container">
+                <p class="footer_text">&copy; Copyright 2023 - Damirbek Xursanaliyev</p>
+            </div>
         </div>
     </div>
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
